@@ -1,0 +1,37 @@
+{
+    "root": [
+      {
+        "name": "Resumen sobre las ventajas y desventajas de la tecnología",
+        "shortName": "Resumen - Pros y Contras - Tecnología",
+        "description": "Entregar un resumen sobre las ventajas y desventajas de la tecnología. \r\nNota: esta es la ultima oportunidad de entregarla.",
+        "fin": "2022-04-29",
+        "icon": "special",
+        "numberCurrent": 9
+      },
+      {
+        "name": "Terminar el trabajo de la semana de arte moderna",
+        "shortName": "Semana de arte moderna - Trabajo",
+        "description": "Este trabajo hay que entregarlo el dia 28/04/2022 por lo que hay que tenerlo listo para entregarlo, es de suma importancia ya que vale nota y es una nota clave para pasar en este año.\r\n\r\n* Entregar el trabajo. \r\n\r\nNota: El trabajo es digital por lo tanto puede ser entregado por email.",
+        "fin": "2022-04-28",
+        "icon": "important",
+        "numberCurrent": 8
+      },
+      {
+        "name": "Hacer un resumen de la evolución de la computadora",
+        "shortName": "Resumen - Presentación - Geografía",
+        "description": "Hacer un resumen de las computadoras de la primera generación y la segunda generación, el dia 28/04/2022 habrá que presentar este trabajo en grupo ante la profesora Inés.\r\n\r\n* Investigar sobre el tema y memorizar alguna cosa.",
+        "fin": "2022-04-28",
+        "icon": "escolar",
+        "numberCurrent": 6
+      },
+      {
+        "name": "Terminar el trabajo para shopptex.com",
+        "shortName": "Terminar shopptex.com",
+        "description": "Terminar todos los componentes para la página de shopptex cuanto antes, ya que solo hay un tiempo límite de 2 semanas y ya han transcurrido algunos días",
+        "icon": "urgent",
+        "endAt": "06/05/2022",
+        "number": 1
+      }
+    ],
+    "numbers": 10
+  }

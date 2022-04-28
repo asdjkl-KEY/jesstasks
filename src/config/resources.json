@@ -1,0 +1,12 @@
+{
+    "main": {
+        "width": 1024,
+        "height": 600,
+        "icon": "./assets/icon.ico",
+        "host": "http://localhost:4000/"
+    },
+    "secondWindow": {
+        "width": 400,
+        "height": 350
+    }
+}

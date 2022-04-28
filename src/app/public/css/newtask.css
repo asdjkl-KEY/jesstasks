@@ -1,0 +1,85 @@
+#toggle {z-index: 20;}
+#main > .contain-form {
+    width: 60%;
+    margin-left: 20%;
+}
+.contain-form > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label {
+    display: block;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 4px;
+    color: #e9e9e9;
+}
+.form-control {
+    display: block;
+    padding: 12px 8px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #a1b1be;
+}
+.form-control:focus-visible {
+    box-shadow: 0 0 12px #a1b1be;
+    -moz-box-shadow: 0 0 12px #a1b1be;
+    -webkit-box-shadow: 0 0 12px #a1b1be;
+}
+.message-2 {
+    padding: 12px;
+    resize: none;
+    height: 300px;
+    margin-bottom: 8px;
+}
+.form-button {
+    padding: 12px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 12px;
+    margin-bottom: 48px;
+}
+.form-button:hover {
+    background: url(/assets/img/dark-noise3.png);
+    box-shadow: 0 0 12px #eef5ff;
+    -moz-box-shadow: 0 0 12px #eef5ff;
+    -webkit-box-shadow: 0 0 12px #eef5ff;
+
+}
+.alert {
+    border-radius: 12px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 24px 0;
+    text-align: center;
+    margin: 8px 0 8px 15%
+}
+.alert-danger {
+    background: #b9151548;
+    border: 1px solid #f00;
+    color: #fd9494;
+}
+.alert-success {
+    background: #15b9304b;
+    border: 1px solid #00ff2a;
+    color: #94fd99;
+}
+
+@media screen and (max-width: 768px) {
+    #main > .contain-form {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-with: 576px) {
+    #main > .contain-form {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

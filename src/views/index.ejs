@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include("partials/head") %>
+  </head>
+  <body>
+    <div id="app" class="p-relative">
+      <%- include("partials/header") %>
+      <%- include("partials/nav") %>
+      <main id="main" class="bg-dark-noise2">
+        <div class="grid-3 gap2 p3 mb-3">
+          <% for (task of allTasks) {%>
+            <div class="size4 part3 bg-dark-noise3">
+              <div class="grid-component top">
+                <img src="assets/svg/<%=task.icon%>.svg" alt="<%=task.icon%>" class="task-icon">
+              </div>
+              <div class="grid-component body">
+                <h3 class="text-center p1"><%=task.shortName%></h3>
+              </div>
+              <a href="/tasks/<%=task.number%>" class="grid-button bg-dark-noise4">Ver detalles</a>
+            </div>
+          <%}%>
+        </div>
+      </main>
+    </div>
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
