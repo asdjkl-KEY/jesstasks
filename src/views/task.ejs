@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head", {path: path}) %>
+    <link rel="stylesheet" type="text/css" href="<%=path%>css/task.css">
+</head>
+<body>
+    <div id="app" class="p-relative">
+        <%- include("partials/header") %>
+        <%- include("partials/nav", {path:path}) %>
+
+        <main id="main" class="bg-dark-noise2">
+            <form action="" class="p2">
+                <div class="form-group">
+                    <label for="state">Cambiar Estado</label>
+                    <select name="state" id="state" class="form-control">
+                        <% for (state of states) {%>
+                            <option value="<%=state%>"><%=state%></option>
+                        <%}%>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Cambiar Categoría</label>
+                    <select name="categories" id="categories" class="form-control">
+                        <% for (category of categories) {%>
+                            <option value="<%=category%>"><%=category%></option>
+                        <%}%>
+                    </select>
+                
+                </div>
+                <strong>Id: <%=task.numberId%> <br>
+                <button type="submit" class="form-button bg-dark-noise4">Guardar</button></strong>
+                <small>Finaliza en: <%=task.fin%></small>
+            </form>
+            <% if(task == 'none') {%>
+                <h2 class="text-center p5 light"><%=message%></h2>
+            <%}%>
+            <% if(task != 'none') {%>
+                <h2 class="text-center mb-3"><%=task.name%></h2>
+                <div>
+                    <p class="p3" id="parrafo">
+                        <%=task.description%>
+                    </p>
+                </div>
+            <%}%>
+        </main>
+    </div>
+    <script src="<%=path%>js/main.js"></script>
+</body>
+</html>

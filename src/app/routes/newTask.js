@@ -16,11 +16,11 @@ module.exports = async (app) => {
         let shortName = req.body.shortname;
         let description = req.body.description;
         let fin = req.body.end;
-        let icon = req.body.category;
+        let category = req.body.category;
         let numberCurrent = await tasks.obtener('numbers');
 
         //? aquí se hace la validación si todos los cuerpos necesarios existen para crear una nueva tarea.
-        if(name == "" || shortName == "" || description == "" || fin == "" || icon == "" || !req.body) {
+        if(name == "" || shortName == "" || description == "" || fin == "" || category == "" || !req.body) {
             req.flash('denyMessage', "Faltan informaciones")
             return res.redirect('/newtask');
         }
@@ -28,7 +28,7 @@ module.exports = async (app) => {
 
         //? aqui se crea la nueva tarea y se guarda en la base de datos local
         let newtask = {
-            name,shortName,description,fin,icon,numberCurrent
+            name,shortName,description,fin,category,numberCurrent
         };
         tasks.push('root', newtask);
         tasks.sumar('numbers', 1);

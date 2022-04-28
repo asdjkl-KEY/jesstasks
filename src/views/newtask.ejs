@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include("partials/head") %>
+    <%- include("partials/head", {path: path}) %>
     <link rel="stylesheet" type="text/css" href="css/newtask.css">
 </head>
 <body>
     <div id="app">
         <%- include("partials/header") %>
-        <%- include("partials/nav") %>
+        <%- include("partials/nav", {path:path}) %>
         <main id="main" class="bg-dark-noise2">
             <div class="contain-form">
                 <% if(messageDeny.length > 0) {%>

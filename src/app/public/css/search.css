@@ -1,0 +1,49 @@
+.contain-form{
+    width: 100%;
+}
+#formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 24px;
+    padding: 24px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+label {
+    color: #cdcdcd;
+}
+.form-submit {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.form-button {
+    padding: 4px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    color: #e9e9e9;
+    width: 80%;
+    margin-left: 10%;
+}
+.form-button:hover {
+    box-shadow: 0 0 12px #cdcdcd;
+    -moz-box-shadow: 0 0 12px #cdcdcd;
+    -webkit-box-shadow: 0 0 12px #cdcdcd;
+}
+.form-control {
+    outline: none;
+    border-radius: 12px;
+    padding: 4px 12px;
+    margin-top: 4px;
+    border: 1px solid #cdcdcd;
+}
+.form-control:focus-visible {
+    box-shadow: 0 0 12px #cdcdcd;
+    -moz-box-shadow: 0 0 12px #cdcdcd;
+    -webkit-box-shadow: 0 0 12px #cdcdcd;
+}

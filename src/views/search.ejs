@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include("partials/head") %>
+    <%- include("partials/head", {path: path}) %>
+    <link rel="stylesheet" type="text/css" href="<%=path%>css/search.css">
 </head>
 <body>
-    <div id="app">
-        
+    <div id="app" class="p-relative">
+        <%- include("partials/header") %>
+        <%- include("partials/nav", {path:path}) %>
+
+        <main id="main" class="bg-dark-noise2">
+            <div class="contain-form m0">
+                <form action="" method="GET" id="formulario">
+                    <div class="form-group">
+                        <label for="category">Filtrar por categoría</label>
+                        <select name="category" id="category" class="form-control">
+                            <option value="select">Seleccione una categoría</option>
+                            <option value="urgent">Urgente</option>
+                            <option value="important">Importante</option>
+                            <option value="special">Especial</option>
+                            <option value="unique">Única</option>
+                            <option value="escolar">Escolar</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">Filtrar por estado</label>
+                        <select name="state" id="state" class="form-control">
+                            <option value="select">Selecione un estado</option>
+                            <option value="current">En curso</option>
+                            <option value="unstart">No iniciada</option>
+                            <option value="noended">No realizada</option>
+                            <option value="ended">Finalizada</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="numberId">Filtrar por número</label>
+                        <input type="number" name="numberId" id="numberId" class="form-control">
+                    </div>
+                    <div class="form-group form-submit">
+                        <a class="form-button bg-dark-noise4" href="" id="button-send">Buscar</a>
+                    </div>
+                </form>
+            </div>
+            <% if(resultTasks.length > 0) {%>
+                <div class="grid-3 gap2 p3 mb-3">
+                    <% for (task of resultTasks) {%>
+                        <div class="size4 part3 bg-dark-noise3">
+                        <div class="grid-component top">
+                            <img src="<%=path%>assets/svg/<%=task.category%>.svg" alt="<%=task.icon%>" class="task-icon">
+                        </div>
+                        <div class="grid-component body">
+                            <h3 class="text-center p1"><%=task.shortName%></h3>
+                        </div>
+                        <a href="/tasks/<%=task.shortName%>" class="grid-button bg-dark-noise4">Ver detalles</a>
+                        </div>
+                    <%}%>
+                </div>
+            <%}%>
+            <% if(resultTasks.length == 0) {%>
+                <h2 class="text-center light"><%=message%></h2>
+            <%}%>
+        </main>
     </div>
+    <script src="<%=path%>js/main.js"></script>
+    <script src="<%=path%>js/search.js"></script>
 </body>
 </html>
