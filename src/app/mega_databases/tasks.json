@@ -1,14 +1,4 @@
 {
-  "root": [
-    {
-      "name": "Resumen sobre las ventajas y desventajas de la tecnología",
-      "shortName": "Resumen-Tecnologia-Ingles",
-      "description": "Hacer un resumen sobre las ventajas y desventajas de la tecnología - último día para entregarlo. Hacerlo preferiblemente en una hoja blanca y bien hecho.",
-      "fin": "2022-04-29",
-      "category": "unique",
-      "numberId": 3,
-      "state": "current"
-    }
-  ],
-  "numbers": 4
+  "root": [],
+  "numbers": 1
 }
