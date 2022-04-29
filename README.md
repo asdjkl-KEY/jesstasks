@@ -44,6 +44,7 @@ Ahora veamos los componentes de la aplicación.
 
 # Aun no terminamos
 # Agregar la aplicación para que se inicie al arrancar el sistema.
+
 Para eso presionamos las teclas <img src="src/assets/windows.svg" alt="windows"><b> + R</b> y digitamos: <b>shell:startup</b> damos <b>Enter</b> y ya solo resta colocar los accesos directos dentro de la carpteta abierta.
 <img src="src/assets/inicio.png" alt="inicio" title="Agregar la App a Inicio Automático">
 
