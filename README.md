@@ -20,3 +20,9 @@ Jesse's tasks es una aplicación ligera y potente, por lo cual será facil tener
 <li>Sistema Operativo: Windows 7,8,8.1,10,11 (para arquitecturas x32 descargar la versión correspondiente)</li>
 <li>Espacio en disco: 512MB (tal vez menos)</li>
 </ul>
+
+
+# Instalación:
+Para instalar la aplicación descargue el archivo correspondiente y ejecute el instalador, en caso de haber descargado el archivo .zip descomprima y en la carpta busque el archivo <b>Jesse's Tasks v0.0.1.exe</b> y ejecute.
+
+<b style="color: #fc0000">!!IMPORTANTE: esta versión solo funciona en windows 10/11 x64bits</b>
