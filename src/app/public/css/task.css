@@ -53,11 +53,9 @@ label {margin-bottom: 12px;}
 .alert {
     border-radius: 12px;
     width: 70%;
-    margin-left: 15%;
     padding: 24px 0;
     text-align: center;
     margin: 8px 0 8px 15%;
-    margin-bottom: 64px;
 }
 .alert-danger {
     background: #b9151548;
@@ -68,11 +66,34 @@ label {margin-bottom: 12px;}
     background: #15b9304b;
     border: 1px solid #00ff2a;
     color: #94fd99;
+    animation: alertOpaque 1.5s forwards;
+    animation-delay: 1.5s;
 }
-#main strong, #main small {
+#main .strong, #main .small {
     position: absolute;
     right: 0;
     bottom: 0;
 }
-#main small {margin: 24px 48px;}
-#main strong {margin: 48px 48px;}
+#main > .small {margin: 24px 48px;}
+#main > .strong {margin: 48px 48px;}
+
+@keyframes alertOpaque {
+    0% {
+        opacity: 1;
+        height: max-content;
+        position: relative;
+        z-index: 20;
+    }
+    99% {
+        opacity: 0;
+        height: max-content;
+        position: relative;
+        z-index: 20;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        position: absolute;
+        z-index: -10;
+    }
+}

@@ -9,9 +9,6 @@ function runServer() {
 
     //!routes
     require('./router')(app);
-    app.use((req, res, next) => {
-        res.status(404).redirect('/')
-    })
 
     app.listen(port, () => {
         console.log("Internal Server opened on port: "+port);

@@ -5,9 +5,9 @@
   "description": "This is my first aplication",
   "main": "src/index.js",
   "scripts": {
-    "pack": "build --dir",
-    "dist": "build",
-    "start": "electron-forge start",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "start": "electron .",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -95,7 +95,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
-    "electron": "18.1.0",
+    "electron": "^18.1.0",
     "electron-builder": "^23.0.3"
   }
 }

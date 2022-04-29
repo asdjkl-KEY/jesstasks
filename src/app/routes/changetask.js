@@ -14,6 +14,7 @@ module.exports = (app) => {
                 newTask.state = config[1];
                 newTask.category = config[2];
                 tasks.push('root', newTask);
+                req.flash('messageChange', "Cambios guardados con éxito!");
                 return res.redirect(`/tasks/${task.shortName}`);
             }
         }

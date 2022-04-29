@@ -10,6 +10,11 @@
         <%- include("partials/nav", {path:path}) %>
 
         <main id="main" class="bg-dark-noise2">
+            <% if(messageChange.length > 0) {%>
+                <div class="alert alert-success">
+                    <strong style="color: #98ff98;"><%=messageChange%></strong>
+                </div>
+            <%}%>
             <% if(task.state == 'ended') {%>
                 <div class="p2 p-relative pt-5">
                     <a href="/deletetask/<%=task.numberId%>" class="form-button bg-dark-noise4" id="delete-top">Eliminar Tarea</a>
@@ -60,8 +65,8 @@
                     </p>
                 </div>
             <%}%>
-            <strong>Id: <%=task.numberId%></strong>
-            <small>Finaliza en: <%=task.fin%></small>
+            <strong class="strong">Id: <%=task.numberId%></strong>
+            <small class="small">Finaliza en: <%=task.fin%></small>
         </main>
     </div>
     <script>let numberId = "<%=task.numberId%>";</script>

@@ -64,7 +64,8 @@ module.exports = async (app) => {
             message,
             task,
             states,
-            categories
+            categories,
+            messageChange: req.flash('messageChange')
         })
 
     })
