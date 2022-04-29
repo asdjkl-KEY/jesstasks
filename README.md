@@ -50,3 +50,6 @@ Para eso presionamos las teclas <img src="src/assets/windows.svg" alt="windows">
 
 # FIN.
 Eso es todo en la version 0.0.1 por ahora, esperen a llegar mas versiones!!
+
+# &copy; 2022 Jesse's Code Todos los derechos reservados
+Aplicación Creada y desenvolvida por <b>Isaí Gabriel Medina Pereira</b>
