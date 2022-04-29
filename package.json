@@ -1,7 +1,7 @@
 {
   "name": "jesse-s-tasks",
   "productName": "Jesse's Tasks",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "This is my first aplication",
   "main": "src/index.js",
   "scripts": {
