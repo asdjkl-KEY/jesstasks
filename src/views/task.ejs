@@ -28,9 +28,10 @@
                     </select>
                 
                 </div>
-                <strong>Id: <%=task.numberId%> <br>
-                <button type="submit" class="form-button bg-dark-noise4">Guardar</button></strong>
+                <strong>Id: <%=task.numberId%></strong>
                 <small>Finaliza en: <%=task.fin%></small>
+                <button type="submit" class="form-button bg-dark-noise4">Guardar</button>
+                <a href="/deletetask/<%=task.shortName%>" class="form-button bg-dark-noise4" id="delete">Eliminar Tarea</a>
             </form>
             <% if(task == 'none') {%>
                 <h2 class="text-center p5 light"><%=message%></h2>

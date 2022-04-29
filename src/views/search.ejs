@@ -58,6 +58,9 @@
                     <%}%>
                 </div>
             <%}%>
+            <% if(resultTasks.length == 0 && message.length == 0) {%>
+                <h2 class="light text-center">Nada que mostrar aquí >-<</h2>
+            <%}%>
             <% if(resultTasks.length == 0) {%>
                 <h2 class="text-center light"><%=message%></h2>
             <%}%>

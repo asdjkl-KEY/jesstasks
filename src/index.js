@@ -3,7 +3,7 @@ const path = require('path');
 const resources = require('./config/resources.json');
 const url = require('url');
 const runServer = require('./app/server.js');
-
+runServer();
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
   // eslint-disable-line global-require
@@ -15,7 +15,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: resources.main.width,
     height: resources.main.height,
-    icon: resources.main.icon
+    icon: path.join(__dirname, 'assets/icon.ico')
   });
 
   // and load the index.html of the app.
@@ -50,4 +50,3 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-runServer();

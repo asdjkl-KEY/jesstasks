@@ -1,6 +1,6 @@
 {
     "main": {
-        "width": 1024,
+        "width": 1200,
         "height": 600,
         "icon": "./assets/icon.ico",
         "host": "http://localhost:4000/"

@@ -8,6 +8,9 @@
       <%- include("partials/header") %>
       <%- include("partials/nav", {path:path}) %>
       <main id="main" class="bg-dark-noise2">
+        <% if(allTasks.length == 0) {%>
+          <h2 class="text-center light pt-5 mt-5">Nada que mostrar aquí >-<</h2>
+        <%}%>
         <div class="grid-3 gap2 p3 mb-3">
           <% for (task of allTasks) {%>
             <div class="size4 part3 bg-dark-noise3">
