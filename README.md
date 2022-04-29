@@ -3,13 +3,12 @@ Esta es la primera primera versión de Jesse's Tasks
 
 # Uso de la aplicación
 # Primero. ¿Qué es Jesse's Tasks?
-Jesse's Tasks es una aplicación pensada para aquellos que tienen inúmeras tareas  para realizar pero son muy olvidadizos.
-Sí que es cierto que nuestra memoria puede recordar mas de 100 cosas al día, sin embargo, por algún motivo u otro, terminamos olvidando lo que tenemos que hacer.
-Muchas veces compramos pensamos en comprar una agenda para hacer anotaciones de cada cosa, pero ¿Realmente tomamos el tiempo para leerla?
+Jesse's Tasks es una aplicación pensada para aquellos que tienen inúmeras tareas  para realizar pero son muy olvidadizos. <br>
+Sí que es cierto que nuestra memoria puede recordar mas de 100 cosas al día, sin embargo, por algún motivo u otro, terminamos olvidando lo que tenemos que hacer. <br>
+Muchas veces compramos pensamos en comprar una agenda para hacer anotaciones de cada cosa, pero ¿Realmente tomamos el tiempo para leerla? <br>
 En muchos casos acabamos perdiendo la agenda o quizás se moje, rompa o le pase alguna otra cosa, no es tan prático por ser de papel y muy vulnerable a que otras personas vean lo que hacemos.
-¡Es por eso que <b>Jesse's Tasks</b> llegó!
-Ya que uno de los aparatos electrónicos que usamos muy amenudo es nuestra PC ¿Por qué no decirle que nos recuerde lo que debemos hacer?
-
+¡Es por eso que <b>Jesse's Tasks</b> llegó! <br>
+Ya que uno de los aparatos electrónicos que usamos muy amenudo es nuestra PC ¿Por qué no decirle que nos recuerde lo que debemos hacer? <br>
 Jesse's Tasks busca ayudar a esas personas recordandoles cada tarea a realizar.
 
 # Requisitos mínimos:
