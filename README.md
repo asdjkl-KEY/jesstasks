@@ -27,4 +27,20 @@ Para instalar la aplicación descargue el archivo correspondiente y ejecute el i
 
 <b>!!IMPORTANTE: esta versión solo funciona en windows 10/11 x64bits</b>
 
+# Componentes
+Ahora veamos los componentes de la aplicación.
+
+# Barra de navegación
 <img src="src/assets/barra_de_navegacion.png" alt="barra de navegación" title="Barra de navegación">
+
+# Nueva tarea
+<img src="src/assets/nueva_tarea.png" alt="nueva tarea" title="Crear Nueva Tarea">
+
+# Buscar Tareas
+<img src="src/assets/buscar_tarea.png" alt="buscar tarea" title="Buscar Tarea">
+
+# Categorias
+<img src="src/assets/categorias.png" alt="categorias" title="Categorias">
+
+# FIN.
+Eso es todo en la version 0.0.1 por ahora, esperen a llegar mas versiones!!
