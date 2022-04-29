@@ -25,4 +25,6 @@ Jesse's tasks es una aplicación ligera y potente, por lo cual será facil tener
 # Instalación:
 Para instalar la aplicación descargue el archivo correspondiente y ejecute el instalador, en caso de haber descargado el archivo .zip descomprima y en la carpta busque el archivo <b>Jesse's Tasks v0.0.1.exe</b> y ejecute.
 
-<b style="color: #fc0000">!!IMPORTANTE: esta versión solo funciona en windows 10/11 x64bits</b>
+<b>!!IMPORTANTE: esta versión solo funciona en windows 10/11 x64bits</b>
+
+<img src="src/assets/barra_de_navegacion.png" alt="barra de navegación" title="Barra de navegación">
