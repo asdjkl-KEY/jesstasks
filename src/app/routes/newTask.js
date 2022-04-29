@@ -17,7 +17,7 @@ module.exports = async (app) => {
         let description = req.body.description;
         let fin = req.body.end;
         let category = req.body.category;
-        let numberCurrent = await tasks.obtener('numbers');
+        let numberId = await tasks.obtener('numbers');
 
         //? aquí se hace la validación si todos los cuerpos necesarios existen para crear una nueva tarea.
         if(name == "" || shortName == "" || description == "" || fin == "" || category == "" || !req.body) {
@@ -28,7 +28,7 @@ module.exports = async (app) => {
 
         //? aqui se crea la nueva tarea y se guarda en la base de datos local
         let newtask = {
-            name,shortName,description,fin,category,numberCurrent
+            name,shortName,description,fin,category,numberId, state: 'unstart'
         };
         tasks.push('root', newtask);
         tasks.sumar('numbers', 1);

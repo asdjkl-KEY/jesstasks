@@ -222,6 +222,14 @@ ul {list-style: none;}
     right: 16px;
     top: 12px;
 }
+.check {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 12px;
+}
 
 
 /*

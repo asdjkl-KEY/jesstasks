@@ -48,6 +48,12 @@
                     <% for (task of resultTasks) {%>
                         <div class="size4 part3 bg-dark-noise3">
                         <div class="grid-component top">
+                            <% if(task.state == 'ended') {%>
+                              <img src="<%=path%>assets/svg/check.svg" title="Finalizado" alt="Check" class="check">
+                            <%}%>
+                            <% if(task.state == 'noended') {%>
+                                <img src="<%=path%>assets/svg/error.svg" title="No Realizado" alt="Check" class="check">
+                            <%}%>
                             <img src="<%=path%>assets/svg/<%=task.category%>.svg" alt="<%=task.icon%>" class="task-icon">
                         </div>
                         <div class="grid-component body">

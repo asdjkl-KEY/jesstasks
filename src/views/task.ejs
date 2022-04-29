@@ -10,29 +10,45 @@
         <%- include("partials/nav", {path:path}) %>
 
         <main id="main" class="bg-dark-noise2">
-            <form action="" class="p2">
-                <div class="form-group">
-                    <label for="state">Cambiar Estado</label>
-                    <select name="state" id="state" class="form-control">
-                        <% for (state of states) {%>
-                            <option value="<%=state%>"><%=state%></option>
-                        <%}%>
-                    </select>
+            <% if(task.state == 'ended') {%>
+                <div class="p2 p-relative pt-5">
+                    <a href="/deletetask/<%=task.numberId%>" class="form-button bg-dark-noise4" id="delete-top">Eliminar Tarea</a>
                 </div>
-                <div class="form-group">
-                    <label for="category">Cambiar Categoría</label>
-                    <select name="categories" id="categories" class="form-control">
-                        <% for (category of categories) {%>
-                            <option value="<%=category%>"><%=category%></option>
-                        <%}%>
-                    </select>
-                
+                <div class="alert alert-success">Tarea completada :D</div>
+            <%}%>
+            <% if(task.state == 'noended') {%>
+                <div class="p2 p-relative pt-5">
+                    <a href="/deletetask/<%=task.numberId%>" class="form-button bg-dark-noise4" id="delete-top">Eliminar Tarea</a>
                 </div>
-                <strong>Id: <%=task.numberId%></strong>
-                <small>Finaliza en: <%=task.fin%></small>
-                <button type="submit" class="form-button bg-dark-noise4">Guardar</button>
-                <a href="/deletetask/<%=task.shortName%>" class="form-button bg-dark-noise4" id="delete">Eliminar Tarea</a>
-            </form>
+                <div class="alert alert-danger">Tarea No Realizada :(</div>
+            <%}%>
+            <%if (task.state != 'ended') {%>
+                <% if(task.state != 'noended') {%>
+                <form action="" class="p2">
+                    <div class="form-group">
+                        <label for="state">Cambiar Estado</label>
+                        <select name="state" id="state" class="form-control">
+                            <% for (state of states) {%>
+                                <option value="<%=state%>"><%=state%></option>
+                            <%}%>
+                        </select>
+                    </div>
+                    
+                    <a href="/changetask/<%=task.numberId%>-<%=states[0]%>-<%=categories[0]%>" id="submit" class="form-button bg-dark-noise4">Guardar</a>
+                    <a href="/deletetask/<%=task.numberId%>" class="form-button bg-dark-noise4" id="delete">Eliminar Tarea</a>
+                    <a href="/completetask/<%=task.numberId%>" class="form-button bg-dark-noise4" id="complete">Completar</a>
+                    <div class="form-group">
+                        <label for="category">Cambiar Categoría</label>
+                        <select name="categories" id="categories" class="form-control">
+                            <% for (category of categories) {%>
+                                <option value="<%=category%>"><%=category%></option>
+                            <%}%>
+                        </select>
+                    
+                    </div>
+                </form>
+                <%}%>
+            <%}%>
             <% if(task == 'none') {%>
                 <h2 class="text-center p5 light"><%=message%></h2>
             <%}%>
@@ -44,8 +60,12 @@
                     </p>
                 </div>
             <%}%>
+            <strong>Id: <%=task.numberId%></strong>
+            <small>Finaliza en: <%=task.fin%></small>
         </main>
     </div>
+    <script>let numberId = "<%=task.numberId%>";</script>
     <script src="<%=path%>js/main.js"></script>
+    <script src="<%=path%>js/tasks.js"></script>
 </body>
 </html>

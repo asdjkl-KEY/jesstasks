@@ -1,10 +1,12 @@
 {
-  "name": "tasks",
-  "productName": "tasks",
+  "name": "jesse-s-tasks",
+  "productName": "Jesse's Tasks",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "This is my first aplication",
   "main": "src/index.js",
   "scripts": {
+    "pack": "build --dir",
+    "dist": "build",
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
@@ -15,6 +17,34 @@
   "author": {
     "name": "Jesse",
     "email": "asdjkl.key@gmail.com"
+  },
+  "build": {
+    "appId": "Jesse's-Code--Jesse's-Tasks-v0.0.1",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
   },
   "license": "MIT",
   "config": {
@@ -65,6 +95,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
-    "electron": "18.1.0"
+    "electron": "18.1.0",
+    "electron-builder": "^23.0.3"
   }
 }
